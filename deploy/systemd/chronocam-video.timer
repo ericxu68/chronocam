@@ -1,0 +1,9 @@
+[Unit]
+Description=Run chronocam video assembly daily
+
+[Timer]
+OnCalendar=daily
+Unit=chronocam-video.service
+
+[Install]
+WantedBy=timers.target

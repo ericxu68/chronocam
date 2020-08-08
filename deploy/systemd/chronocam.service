@@ -1,0 +1,11 @@
+[Unit]
+Description=Chronocam timelapse
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/chronocam -o /opt/chronocam-output
+RestartSec=1
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

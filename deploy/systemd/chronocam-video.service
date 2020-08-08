@@ -1,0 +1,8 @@
+[Unit]
+Description=Chronocam video assembly
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/chronocam-video.sh
+RestartSec=1
+Restart=on-failure
