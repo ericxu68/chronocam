@@ -20,7 +20,7 @@ ffmpeg \
     glob -i '/opt/chronocam-video-work/*.jpg' \
     -s hd1080 \
     -vcodec libx264 \
-    "/opt/chronocam-video/$(date +"%m_%d_%Y").mp4"
+    "/opt/chronocam-video-output/$(date +"%m_%d_%Y_%H-%M-%S").mp4"
 
 # we are done, so we can remove the working directory and reclaim the storage
 # space occupied by the JPEG files

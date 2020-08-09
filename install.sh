@@ -16,11 +16,11 @@ echo "installing scripts"
 cp "${DIR}/deploy/scripts/*.sh" /usr/local/bin
 
 echo "installing systemd units"
-cp "${DIR}/deploy/systemd/*.service" /etc/systemd/system/
-cp "${DIR}/deploy/systemd/*.timer" /etc/systemd/system/
+cp "${DIR}"/deploy/systemd/*.service /etc/systemd/system/
+cp "${DIR}"/deploy/systemd/*.timer /etc/systemd/system/
 
 echo "starting units"
 systemctl enable chronocam.service
 systemctl start chronocam.service
 
-systemctl enable chronocam-video.timer
+systemctl enable systemctl start chronocam.service.timer

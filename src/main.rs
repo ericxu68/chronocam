@@ -60,7 +60,7 @@ fn capture(interval: Duration, output_dir: &str) -> opencv::Result<()> {
             // TODO: adapt text color to time of day (so that black text doesn't get lost in background)
             rectangle(
                 &mut frame,
-                Rect::new(0, 0, width, 45),
+                Rect::new(0, 0, width, 20),
                 Scalar::all(0.0),
                 -1,
                 LINE_AA,
@@ -69,11 +69,11 @@ fn capture(interval: Duration, output_dir: &str) -> opencv::Result<()> {
             put_text(
                 &mut frame,
                 timestamp.as_str(),
-                Point::new(10, 32),
+                Point::new(10, 15),
                 FONT_HERSHEY_PLAIN,
-                2.0,
+                1.0,
                 Scalar::all(255.0),
-                2,
+                1,
                 LINE_AA,
                 false,
             )?;
