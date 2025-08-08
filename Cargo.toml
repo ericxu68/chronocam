@@ -5,6 +5,6 @@ name = "chronocam"
 version = "0.1.0"
 
 [dependencies]
-chrono = "0.4.24"
+chrono = "=0.4.13"
 clap = "2.33.2"
 opencv = "0.44"
